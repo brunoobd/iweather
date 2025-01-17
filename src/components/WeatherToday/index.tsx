@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { styles } from './styles';
 
 import { isDayTime } from '@utils/isDayTime';
-import { weatherIcons } from 'src/utils/weatherIcons';
+import { weatherIcons } from '@src/constants/weatherIcons';
 
 export type WeatherTodayProps = {
   temp: string;
