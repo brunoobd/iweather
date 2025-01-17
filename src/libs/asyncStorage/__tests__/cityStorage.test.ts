@@ -1,7 +1,7 @@
 import {
   getStorageCity,
-  removeStorageCity,
   saveStorageCity,
+  removeStorageCity,
 } from "@libs/asyncStorage/cityStorage";
 import { city as newCity } from "@src/__mocks__/city.mock";
 
