@@ -3,5 +3,9 @@
   "transformIgnorePatterns": [
     "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg)"
   ],
-  "setupFiles": ["./configs/tests/jestSetupFile.ts"]
+  "setupFiles": ["./configs/tests/jestSetupFile.ts"],
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.svg$": "jest-transformer-svg"
+  }
 }
