@@ -1,20 +1,10 @@
 import { render } from "@testing-library/react-native";
 import { Day } from "@components/Day";
-import clearDay from "@assets/clear_day.svg";
+import { day } from "@src/__mocks__/day.mock";
 
 describe("Component: Day", () => {
   it("should render day", () => {
-    const { getByText } = render(
-      <Day
-        data={{
-          day: "18/07",
-          min: "30°c",
-          max: "34°c",
-          icon: clearDay,
-          weather: "Céu limpo",
-        }}
-      />
-    );
+    const { getByText } = render(<Day data={day} />);
 
     expect(getByText("18/07")).toBeTruthy();
   });
