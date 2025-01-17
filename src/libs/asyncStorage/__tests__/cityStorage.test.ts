@@ -3,7 +3,6 @@ import {
   removeStorageCity,
   saveStorageCity,
 } from "@libs/asyncStorage/cityStorage";
-import { CityProps } from "@services/getCityByNameService";
 import { city as newCity } from "@src/__mocks__/city.mock";
 
 describe("Libs/AsyncStorage: cityStorage", () => {
