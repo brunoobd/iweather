@@ -28,7 +28,7 @@ export const SelectList = ({
       value={value}
     />
 
-    <View style={styles.options}>
+    <View style={styles.options} testID="options">
       {data.map((item) => (
         <TouchableOpacity
           key={item.latitude}
