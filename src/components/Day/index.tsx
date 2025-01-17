@@ -1,7 +1,6 @@
-import { Text, View } from 'react-native';
-import { SvgProps } from 'react-native-svg';
-
-import { styles } from './styles';
+import { Text, View } from "react-native";
+import { SvgProps } from "react-native-svg";
+import { styles } from "./styles";
 
 export type DayProps = {
   icon: React.FC<SvgProps>;
@@ -9,30 +8,25 @@ export type DayProps = {
   weather: string;
   max: string;
   min: string;
-}
+};
 
 type Props = {
   data: DayProps;
 };
 
-export function Day({ data }: Props) {
-  const { icon: Icon } = data;
+export const Day = ({ data }: Props) => {
+  const { icon, day, max, min } = data;
+  const Icon = icon;
 
   return (
     <View style={styles.container}>
-      <Text style={styles.day}>
-        {data.day}
-      </Text>
+      <Text style={styles.day}>{day}</Text>
 
       <Icon width={56} height={56} />
 
-      <Text style={styles.max}>
-        {data.max}
-      </Text>
+      <Text style={styles.max}>{max}</Text>
 
-      <Text style={styles.min}>
-        {data.min}
-      </Text>
+      <Text style={styles.min}>{min}</Text>
     </View>
   );
-}
+};
