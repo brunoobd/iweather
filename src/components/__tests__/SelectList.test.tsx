@@ -1,15 +1,10 @@
 import { SelectList } from "@components/SelectList";
-import { CityProps } from "@services/getCityByNameService";
+import { cities } from "@src/__mocks__/city.mock";
 import { fireEvent, render } from "@testing-library/react-native";
-import { View } from "react-native";
 
 describe("Component: SelectList", () => {
   it("should return the details of the selected city", () => {
     const onPress = jest.fn();
-    const cities: Array<CityProps> = [
-      { id: "1", name: "Campinas", latitude: 123, longitude: 321 },
-      { id: "2", name: "São Paulo", latitude: 456, longitude: 654 },
-    ];
     const { getByText } = render(
       <SelectList data={cities} onChange={() => {}} onPress={onPress} />
     );
