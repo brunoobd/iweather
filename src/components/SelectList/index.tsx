@@ -26,6 +26,7 @@ export const SelectList = ({
       onChangeText={onChange}
       isLoading={isLoading}
       value={value}
+      testID="search-input"
     />
 
     <View style={styles.options} testID="options">
