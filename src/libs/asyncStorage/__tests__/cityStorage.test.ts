@@ -3,7 +3,7 @@ import {
   saveStorageCity,
   removeStorageCity,
 } from "@libs/asyncStorage/cityStorage";
-import { city as newCity } from "@src/__mocks__/city.mock";
+import { city as newCity } from "@src/__tests__/__mocks__/city.mock";
 
 describe("Libs/AsyncStorage: cityStorage", () => {
   it("should return null when don't have a city storaged", async () => {
