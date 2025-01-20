@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react-native";
 import { NextDays } from "@components/NextDays";
-import { days } from "@src/__tests__/__mocks__/day.mock";
+import { days } from "@src/__tests__/mocks/day.mock";
 
 describe("Component: NextDays", () => {
   it("should render days", () => {

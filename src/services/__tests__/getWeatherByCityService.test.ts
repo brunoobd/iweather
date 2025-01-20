@@ -11,6 +11,6 @@ describe("Service: getWeatherByCityService", () => {
       longitude: 123,
     });
 
-    expect(response).toBeGreaterThan(0);
+    expect(response).toHaveProperty('today')
   });
 });

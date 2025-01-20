@@ -1,5 +1,5 @@
 import { SelectList } from "@components/SelectList";
-import { cities } from "@src/__tests__/__mocks__/city.mock";
+import { cities } from "@src/__tests__/mocks/city.mock";
 import { fireEvent, render } from "@testing-library/react-native";
 
 describe("Component: SelectList", () => {
