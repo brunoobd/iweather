@@ -22,7 +22,7 @@ describe("Screen: Dashboard", () => {
     jest.spyOn(api, "get").mockResolvedValue({ data: mockWeatherAPIResponse });
 
     const { findByText } = render(<Dashboard />);
-    const cityName = await waitFor(() => findByText(/rio de janeiro/i));
+    const cityName = await findByText(/rio de janeiro/i);
 
     expect(cityName).toBeTruthy();
   });
